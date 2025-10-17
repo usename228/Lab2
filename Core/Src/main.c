@@ -99,7 +99,7 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   uint8_t rx=0;
   uint8_t tx=0;
-  char message[32];
+  char message[32] = "message";
   while (1)
   {
   HAL_UART_Transmit(&huart1, &tx, 1, HAL_MAX_DELAY);
